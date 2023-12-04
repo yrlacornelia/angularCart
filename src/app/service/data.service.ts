@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
 
 interface Post {
   userId: number;
+  image: string;
   id: number;
   title: string;
   body: string;

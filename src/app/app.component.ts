@@ -5,9 +5,11 @@ import { CartComponent } from './component/cart/cart.component';
 import { HeaderComponent } from './component/header/header.component';
 import { NgModule } from '@angular/core';
 import { DataService } from './service/data.service';
+import { ProductComponent } from './component/product/product.component';
 
 interface Post {
   userId: number;
+  image: string;
   id: number;
   title: string;
   body: string;
@@ -17,7 +19,7 @@ interface Post {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ CommonModule, RouterOutlet, HeaderComponent, CartComponent],
+  imports: [ CommonModule, RouterOutlet, HeaderComponent, CartComponent, ProductComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
