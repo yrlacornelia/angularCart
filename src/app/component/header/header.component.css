@@ -1,12 +1,93 @@
 .form-control{
     border-radius: 3px;
-    width: 600px;
+    width: 300px;
     margin-left: 20px;
 }
 
 .search-icon{
     position: absolute;
     z-index: 10;
-    right: 40%;
-    color: blue;
+    right: 12px;
+    top: 10px;
+}
+.navbar{
+    background-color: #E8E8E8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+}
+.form-group {
+    position: relative;
+
+}
+
+
+.form-control{
+    padding: 10px;
+    border: 1px solid #CDCDCD;
+    border-radius: 0;
+    font-size: 14px;
+}
+
+.btn{
+    border: none;
+width: min-content;
+width: 50px;
+height: 40px;
+padding: 6px;
+    background-color: transparent;
+    position: relative;
+}
+.badge{
+    position: absolute;
+    width: 20px;
+    border-radius: 50%;
+    background-color: blue;
+}
+.test{
+    position: absolute;
+    background: #3DAFAF;
+    border-radius: 50%;
+   height: 12px;
+   width: 12px;
+   padding: 3px;
+   font-size: 10px;
+   top: 0;
+   right: 2px;
+   border: 0.5px solid white;
+}
+
+.hero{
+    display: flex;
+    height: 60vh;
+    background-color: #E2F4F2;
+    justify-content: center;
+    align-items: center;
+}
+/* 
+ fa-solid .fa-cart-shopping{
+    border: 1px solid greenyellow;
+} */
+.heroContent{
+    display: flex;
+    width: 45%;
+}
+
+.goToCartBtn{
+    border: none;
+    color: white;
+ padding: 10px;
+ width: 150px;
+ margin-top: 10px;
+    background-color: #493F3B;
+}
+.hero-img{
+   background: radial-gradient( #BEFF7C, #E2F4F2,#E2F4F2);
+    border-radius: 50%;
 }
