@@ -7,6 +7,8 @@ interface Post {
   image: string;
   id: number;
   title: string;
+  price: string,
+  description: string;
   body: string;
 }
 
