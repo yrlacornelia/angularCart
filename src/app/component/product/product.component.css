@@ -1,27 +1,36 @@
 .images img {
-    width: 100%;
-    height: 250px;
-    border: 1px solid green;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 15px;
+    transition: 0.3s ease-in-out;
 }
-.images {
 
-}
 .card-container  {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
     gap: 20px; /* Adjust spacing between cards */
-    margin: 10px;
+    margin: 100px;
     }
     
     .card{
         text-align: left;
-        background-color: #f0f0f0;
+        background-color: white;
+        border: 0.5px solid #B5B5B5;
         padding: 20px;
-        height: 55vh;
+        height: 80vh;
+        justify-content: space-between;
         display: flex;
-        justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+    .images img:hover {
+        transition: 0.3s ease-in-out;
+        transform: scale(1.1);
+    }
+    .card-text{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
     }
     .button{
         background-color: #3DAFAF;
@@ -30,6 +39,49 @@
         color: white;
         width: 70%;
         padding: 15px;
+       
 
+    }
 
+    .filter-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 60px; 
+
+    }
+    .filterbtn-container h4{
+    margin: 10px;
+    }
+    .filterbtn-container{
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        text-align: center;
+    }
+  
+    .filterBtn{
+        width: 100px;
+        height: 100px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .filterBtn i{
+        font-size: 50px; /* Change the font-size to make the icon larger */
+        color: #b83232; /* Your icon color */  
+
+    }
+    .btnOne{
+        background-color: #DEE075;
+    }
+    .btnTwo{
+        background-color: #87D4FF;
+    }
+    .btnThree{
+        background-color: #9DCBBD;
+    }
+    .btnFour{
+        background-color: #FB5E5E;
     }

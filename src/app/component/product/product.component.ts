@@ -45,4 +45,10 @@ export class ProductComponent {
     this.cartService.addToCart(item)
     console.log("hi")
   }
+  truncateText(text: string, limit: number): string {
+    const textArray = text.trim().split(' ');
+    const truncated = textArray.slice(0, limit).join(' ');
+
+    return truncated + (textArray.length > limit ? '...' : '');
+  }
 }
