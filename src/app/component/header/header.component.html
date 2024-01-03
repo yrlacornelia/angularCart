@@ -5,7 +5,7 @@
                <strong>Angular Cart</strong>
             <div class="form-group relative">
             <span class="fas fa-search search-icon"></span>
-                <input type="text" class="form-control" placeholder="Doesnt work yet..." />
+                <input type="text" class="form-control" (keyup)="search($event)" placeholder="Doesnt work yet..." />
             </div>
         </div>
         <button  class="btn btn-primary" routerLink='cart'>

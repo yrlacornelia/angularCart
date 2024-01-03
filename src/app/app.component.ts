@@ -6,6 +6,8 @@ import { HeaderComponent } from './component/header/header.component';
 import { NgModule } from '@angular/core';
 import { DataService } from './service/data.service';
 import { ProductComponent } from './component/product/product.component';
+import { filter } from 'rxjs';
+import { CustomFilterPipe } from './shared/custom-filter.pipe';
 
 interface Post {
   userId: number;
@@ -19,7 +21,7 @@ interface Post {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ CommonModule, RouterOutlet, HeaderComponent, CartComponent, ProductComponent],
+  imports: [ CommonModule, RouterOutlet, HeaderComponent, CartComponent, CustomFilterPipe, ProductComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
