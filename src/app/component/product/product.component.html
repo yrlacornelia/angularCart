@@ -27,8 +27,9 @@
           <b>{{ post.title }}</b>
           <p>{{ truncateText(post.description, 10) }}</p>
           <p><b>${{ post.price }}</b></p>
-          <button class="button" (click)="addToCart(post)">ADD TO CART</button>
-        </div>
+        
+        </div> 
+         <button class="button" (click)="addToCart(post)">ADD TO CART</button>
       </div>
     </div>
   </div>
